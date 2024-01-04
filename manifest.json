@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "i-learningPDF Downloads( for cycu )",
+  "version": "1.0",
+  "author": "gaxzipTGO",
+  "description": "download i-learning *.pdf",
+
+  "action": {
+    "default_icon" : {
+    "128": "images/icon-128.png"
+    },
+    "default_title" : "Click to download"
+  },
+  "permissions": [
+    "webRequest", "activeTab", "scripting", "downloads"
+  ],
+  "host_permissions": [
+    "*://i-learning.cycu.edu.tw/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
